@@ -1,0 +1,6 @@
+<div class="d-flex my-6">
+    <a href="http://homa.org.in/pdfNotification/{{this.pdfNotification}}" download >{{this.title}}</a>
+    <form method="POST" action="/deletePdf/{{this._id}}?_method=DELETE" >
+        <button type="submit" class="btn btn-danger">Delete</button>
+    </form>
+</div>

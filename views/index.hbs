@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=" Hazrat Omar (R) Model Academy (HOMA) is established and founded in the year 1991 by Assam Falah Society, a premier
+    Socio Welfare Vountary Organization of North East India. The Academy is one of the sever welfare
+    projects of the Sociaty in the region. It is an output of relentless and untiring efforts of a few dedicated social
+    workers with an ambitious vision to boast and uplift the young pupils of the region in particular and the country at large. The
+    institution, besides pro viding quality education also aims at nurturing the young minds at mosphere of spiritual
+    serenity and moral chastity. However, the school is open for pupils of all religion, cast, creed, gender of language.
+    In short 'HOMA' is founded to inculcate the value based and Spiritual education with modern subjects to its students.
+    The HOMA complex is in an area of around 32 Bighas of land and located well away from the bustle of the town. The
+    school is situated at a picturesque and serene location 1.2 km west from Howly Town in Barpeta District of Assam." />
+    <meta name="keywords" content="homa,HOMA,HOWLY,howly,BARPETA,barpeta,harat,omar,model,academy,assam,school,college,science,arts,commerce,class xi,class xii, islamic " />
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css.css">
+   <link rel="shortcut icon" type="image/ico" href="/pic/homalogo.png">
+    <title>HOMA</title>
+</head>
+{{>headerPartial}}
+
+<body>
+    <div class="container-fluid">
+        <div class="row"> 
+            <div id="largePic" class="col-8 my-2">
+                <div class="card">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!--
+                            {{#each coverPhotoArray}}
+                            {{>coverPhotoPartial}}
+                            {{/each}}
+				<div class="carousel-item active">
+                                <img class='image' src="/pic/result2022.jpeg" class="d-block w-100" alt="...">
+                            </div>
+			    -->
+                            <div class="carousel-item active">
+                                <img class='image' src="/pic/homaPic.jpeg" class="d-block w-100" alt="...">
+                            </div>
+			      
+                            <div class="carousel-item">
+                                <img class='image' src="/pic/poster.jpeg" class="d-block w-100" alt="...">
+                            </div>
+			  
+                            <div class="carousel-item">
+                                <img class='image' src="/pic/result2022.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img class='image' src="/pic/result2021.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img class='image' src="/pic/result2017.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img class='image' src="/pic/mainbuilding.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img class='image' src="/pic/premise2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img class='image' src="/pic/topview.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img class='image' src="/pic/pic5.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img class='image' src="/pic/homa.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img class='image' src="/pic/mosque.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img class='image' src="/pic/medical.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col container my-2">
+                <div class="card btn btn-success">
+                    <div class="fa-3x">
+                        <i class="fa-solid fa-bell fa-shake">NOTIFICATIONS</i>
+                    </div>
+
+                </div>
+                <div id="notification" class="container-fluid">
+                    <marquee style="height:21rem" behavior="scroll" direction="up" scrolldelay='300'
+                        onmouseover="stop()" onmouseout="start()">
+
+                        <li>
+                            <p>
+                                <a href="https://bit.ly/3c35KVQ">Online Application Form, H.O.M.A, Session 2023-2024</a>
+                            </p>
+                        </li>
+
+                        {{#each linkArray}}
+                        {{>notificationPartial}}
+                        {{/each}}
+                        
+                        {{#each pdfNotificationArray}}
+                        {{>pdfPartial}}
+                        {{/each}}
+                    </marquee>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+    <section>
+        <div>
+            <h1 class="card btn btn-success">OUR COURSES</h1>
+        </div>
+        <div id="courseColor" class="container-fluid">
+            <div class="row">
+                <div class="col my-1">
+                    <div class="card">
+                        <a href="/science">
+                            <div class="card btn btn-success">
+                                <h3>SCIENCE (10+2)</h3>
+                            </div>
+                            <img src="/pic/pic3.jpeg" class="card-img-top" alt="...">
+                        </a>
+                    </div>
+                </div>
+                <div class="col my-1">
+                    <div class="card">
+                        <a href="/class-IX">
+                            <div class="card btn btn-success">
+                                <h3>CLASS IX & X</h3>
+                            </div>
+                            <img src="/pic/pic3.jpeg" class="card-img-top" alt="...">
+
+                        </a>
+                    </div>
+                </div>
+                <div class="col my-1">
+                    <div class="card">
+                        <a href="/arts">
+                            <div class="card btn btn-success">
+                                <h3>CLASS VII-VIII</h3>
+                            </div>
+                            <img src="/pic/pic3.jpeg" class="card-img-top" alt="...">
+                        </a>
+                    </div>
+                </div>
+                <div class="col my-1">
+                    <div class="card">
+                        <a href="/ba">
+                            <div class="card btn btn-success">
+                                <h3>LOWER CLASS</h3>
+                            </div>
+                            <img src="/pic/pic3.jpeg" class="card-img-top" alt="...">
+
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    -->
+    <section>
+        <div class="container-fluid">
+            <h1 class="card btn btn-primary">WHY HOMA</h1>
+            <div id="whyGsa" class="container-fluid mx-6">
+                <p>
+                    Hazrat Omar (R) Model Academy (HOMA) is established and founded in the year 1991 by Assam Falah
+                    Society, a premier
+                    Socio Welfare Vountary Organization of North East India. The Academy is one of the sever welfare
+                    projects of the
+                    Sociaty in the region. It is an output of relentless and untiring efforts of a few dedicated social
+                    workers with an
+                    ambitious vision to boast and uplift the young pupils of the region in particular and the country at
+                    large. The
+                    institution, besides pro viding quality education also aims at nurturing the young minds at mosphere
+                    of spiritual
+                    serenity and moral chastity. However, the school is open for pupils of all religion, cast, creed,
+                    gender of
+                    language. In short 'HOMA' is founded to inculcate the value based and Spiritual education with
+                    modern subjects to
+                    its students.
+
+                    The HOMA complex is in an area of around 32 Bighas of land and located well away from the bustle of
+                    the town. The
+                    school is situated at a picturesque and serene location 1.2 km west from Howly Town in Barpeta
+                    District of Assam.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="mainBox" class="container-fluid ">
+            <div id="deskBox" class="col-3 container-fluid">
+                <div class="container-fluid desk">
+                    <h2 class="card btn btn-success">SECRETARY'S DESK</h2>
+                    <div class="col my-2">
+                        <div>
+                            <a href="/secretary-desk">
+                                <img src="/pic/Secretary.PNG" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">In the name of Allah the most Gracious the most Merciful
+                                        Assalamu Alaikum,Welcome to Read more...
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid desk">
+                    <h2 class="card btn btn-success">PRINCIPAL'S DESK</h2>
+                    <div class="col my-2">
+			 <div>
+                            <a href="/principal-desk">
+                                <img src="/pic/principalhoma.PNG" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">In the name of Allah, the most gracious, the most merciful
+				    Dear Parents, students and Read more...
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h2 class="card btn btn-success">OUR TOP PERFORMERS</h2>
+                <div id="performer" class="container-fluid desk">
+                    <div class="row">
+                        <div class="col my-1">
+                            <div class="card">
+                                <img src="/pic/Rana.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>ILIYAS RANA KHAN <br>
+                                        5th POSITION <br>
+                                        2015</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col my-1">
+                            <div class="card">
+                                <img src="/pic/hamidul.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>HAMIDUL ISLAM <br>
+                                        19th POSITION <br>
+                                        2016</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col my-1">
+                            <div class="card">
+                                <img src="/pic/shahid.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>SHAHID ABDULLAH <br>
+                                        93.3 % <br>
+                                        2021-22
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col my-1">
+                            <div class="card">
+                                <img src="/pic/rahamatullah.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>RAHMA <br> TULLAH<br>
+                                        91 % <br>
+                                        2021-22</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col my-1">
+                            <div class="card">
+                                <img src="/pic/Abu Bakkar.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>ABU BAKAR <br>
+                                        SIDDIQUE <br>
+                                        91.83 % <br>
+                                        2021-22</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col my-1">
+                            <div class="card">
+                                <img src="/pic/masudur.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>MASUDUR RAHMAN <br>
+                                        90.7 % <br>
+                                        2021-22</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="col my-1">
+                            <div class="card">
+                                <img src="/pic/Hafiz Afzal Hassan.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>HAFIZ AFZAL HASSAN
+                                        90.66 % <br>
+                                        2021-22</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col my-1">
+                            <div class="card">
+                                <img src="/pic/Shahinur.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>SAHINUR HOQUE <br>
+                                        88.83 % <br>
+                                        2021-22</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col my-1">
+                            <div class="card">
+                                <img src="/pic/Sakila.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>SHAKILA RAHMAN <br>
+                                        88.5 % <br>
+                                        2021-22</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col my-1">
+                            <div class="card">
+                                <img src="/pic/zareen.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>ZAREEN SULTANA <br>
+                                        87 % <br>
+                                        2021-22</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col my-1">
+                            <div class="card">
+                                <img src="/pic/sayed.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>SAYED AHMED <br>
+                                        85 % <br>
+                                        2021-22</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col my-1">
+                            <div class="card">
+                                <img src="/pic/manjurul.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>MANJURUL ASHIUE <br>
+                                        80.2 % <br>
+                                        2021-22</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <hr>
+                        <!--
+                        <hr>
+                        <div class="col my-1">
+                            <div class="card">
+                                <img src="/pic/Jenifa.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>JENIFA PARBIN <br>
+                                        88 % <br>
+                                        2021-22</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col my-1">
+                            <div class="card">
+                                <img src="/pic/Morshida.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>MURSHIDA AHMED <br>
+                                        87 % <br>
+                                        2021-22</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col my-1">
+                            <div class="card">
+                                <img src="/pic/Masuma Khatun.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>MASUMA KHATUN <br>
+                                        85.5 % <br>
+                                        2021-22</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col my-1">
+                            <div class="card">
+                                <img src="/pic/Arjina.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>ARJINA AHMED <br>
+                                        84.33 % <br>
+                                        2021-22</p>
+                                </div>
+                            </div>
+                        </div>
+                        -->
+                        <a href="/otherToppers">
+                            <button type="button" class="btn btn-primary">OTHER TOPPER'S</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <div>
+        <div class="container-fluid">
+            <div class="col my-1">
+                <div id="principalDesk" class="clearfix desk">
+                    <h2 class="card btn btn-success">RUN BY THE ASSAM FALAH SOCIETY</h2>
+                    <!--
+                    <img id="largePic" src="/pic/principalhoma.png" class="col-md-3 mx-3 float-md-end mb-1 ms-md-1"
+                        alt="Falah society image">
+                    -->    
+                    <p>
+                        Assam Falah Society, a leading non-Govt non-profit making voluntary organization of North East
+                        India.
+                        formed in 1984 and Registered in 1985 under Society Registration Act XO of 1860, vide No.401 of
+                        1985-86 with a view to
+                        establish Schools Madrassa. Orphanage, Technical and Vocational Training Centres Hostels and
+                        Lodges to run
+                        coaching Centres. Computer Training Centres, to manage and to distribute scholarships to the
+                        poor needy and
+                        meritorious students to provide relief and rehabilitations to the victims of communal riots and
+                        natural calamities and to make efforts to bring about communal harmony, friendship and fellow
+                        feelings among the people of different caste, creed and religion. And in order to materialize
+                        these objectives the society has been remaining
+                        busy in
+                        versatile social activities since its birth
+
+                        Area of Work Education
+
+                        Health Relief & Rehabilitations
+
+                        Women Empowerment
+
+                        Community Building
+                    </p>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!--
+    <section>
+        <div class="container-fluid">
+            <h2 class="card btn btn-success">OTHER TOPPER'S</h2>
+            <div id="ourFaculty" class="container-fluid">
+                <div class="row">
+                    <div class="col my-2">
+                        <div class="col my-1">
+                            <div class="card">
+                                <img src="/pic/shahiin.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>FATIMA ZINNZ <br>
+                                        83.33 % <br>
+                                        2021-22</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col my-3">
+                        <div class="col my-1">
+                            <div class="card">
+                                <img src="/pic/shahiin.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>NARGIS SULTANA <br>
+                                        83.16 % <br>
+                                        2021-22</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col my-3">
+                        <div class="col my-1">
+                            <div class="card">
+                                <img src="/pic/shahiin.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>NISHAR AZAD <br>
+                                        80.66 % <br>
+                                        2021-22</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col my-3">
+                        <div class="col my-1">
+                            <div class="card">
+                                <img src="/pic/shahiin.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>SOLEMAN RAHMAN <br>
+                                        80.66 % <br>
+                                        2021-22</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col my-3">
+                        <div class="col my-1">
+                            <div class="card">
+                                <img src="/pic/shahiin.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>SALMA AKTAR <br>
+                                        80.16 % <br>
+                                        2021-22</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col my-3">
+                        <div class="col my-1">
+                            <div class="card">
+                                <img src="/pic/shahiin.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>RIZWAN AHTAR <br>
+                                        79.66 % <br>
+                                        2021-22</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="col my-3">
+                        <div class="col my-1">
+                            <div class="card">
+                                <img src="/pic/shahiin.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>MIRZUMA BEGUM <br>
+                                        79.5 % <br>
+                                        2021-22</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col my-3">
+                        <div class="col my-1">
+                            <div class="card">
+                                <img src="/pic/shahiin.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>ARIFA AKTAR <br>
+                                        78.83 % <br>
+                                        2021-22</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col my-3">
+                        <div class="col my-1">
+                            <div class="card">
+                                <img src="/pic/shahiin.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>ANISA AHMED <br>
+                                        78.66 % <br>
+                                        2021-22</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col my-3">
+                        <div class="col my-1">
+                            <div class="card">
+                                <img src="/pic/shahiin.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>MASUMA ISLAM <br>
+                                        77 % <br>
+                                        2021-22</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col my-3">
+                        <div class="col my-1">
+                            <div class="card">
+                                <img src="/pic/shahiin.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>JIYAUR RAHMAN <br>
+                                        76.83 % <br>
+                                        2021-22</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col my-3">
+                        <div class="col my-1">
+                            <div class="card">
+                                <img src="/pic/shahiin.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>ADIL SHARIYAR <br>
+                                        76.16 % <br>
+                                        2021-22</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="col my-3">
+                        <div class="col my-1">
+                            <div class="card">
+                                <img src="/pic/shahiin.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>ZARIFA YESMIN <br>
+                                        75.83 % <br>
+                                        2021-22</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col my-3">
+                        <div class="col my-1">
+                            <div class="card">
+                                <img src="/pic/shahiin.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>RIDUL AHMED <br>
+                                        75.66 % <br>
+                                        2021-22</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col my-3">
+                        <div class="col my-1">
+                            <div class="card">
+                                <img src="/pic/shahiin.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>IMDADUL KHAN <br>
+                                        75 % <br>
+                                        2021-22</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col my-3">
+                        <div class="col my-1">
+                            <div class="card">
+                                <img src="/pic/shahiin.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>MUSARAF ALI <br>
+                                        75 % <br>
+                                        2021-22</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col my-3">
+                        <div class="col my-1">
+                            <div class="card">
+                                <img src="/pic/shahiin.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>SHOHANA AHMED <br>
+                                        75 % <br>
+                                        2021-22</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+</body>
+
+<footer>
+    {{>footerPartial}}
+</footer>
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

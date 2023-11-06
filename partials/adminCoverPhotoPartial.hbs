@@ -1,0 +1,6 @@
+<div class="d-flex my-6">
+    <p>Cover Photo : {{this.title}}</p>
+    <form method="POST" action="/deleteCoverPhoto/{{this._id}}?_method=DELETE" >
+        <button type="submit" class="btn btn-primary">Delete</button>
+    </form>
+</div>  

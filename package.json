@@ -1,0 +1,29 @@
+{
+  "name": "college-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Shahiin Al Habiib",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-handlebars": "^5.3.3",
+    "fs": "0.0.1-security",
+    "handlebars-helpers": "^0.10.0",
+    "hbs": "^4.1.2",
+    "jsonwebtoken": "^8.5.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.13.5",
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.20",
+    "path": "^0.12.7",
+    "pdf-creator-node": "^2.2.3",
+    "ufw": "^1.0.3"
+  }
+}
